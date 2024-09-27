@@ -17,11 +17,9 @@ include_directories(
 set(SOURCES
     main.c
     startup_stm32f4xx.s
-    system_stm32f4xx.c
-    stm32f4xx_hal.c
 )
 
-add_executable(${PROJECT_NAME}.elf ${SOURCES})
+add_executable(emb-project.elf ${SOURCES})
 
 add_custom_command(TARGET ${PROJECT_NAME}.elf POST_BUILD
     COMMAND ${CMAKE_OBJCOPY} -O binary ${PROJECT_NAME}.elf ${PROJECT_NAME}.bin
