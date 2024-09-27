@@ -1,4 +1,5 @@
-#include "stm32f4xx.h"
+#include "stm32f4xx_hal.h"
+#include "main.h"
 
 void delay(uint32_t count) {
     while(count--);
