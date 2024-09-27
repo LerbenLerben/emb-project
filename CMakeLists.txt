@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.13)
-project(emb-project C ASM)
+project(main C ASM)
 set(CMAKE_SYSTEM_NAME Generic)
 set(CMAKE_SYSTEM_PROCESSOR cortex-m4)
 
