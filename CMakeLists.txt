@@ -11,7 +11,8 @@ set(CMAKE_C_FLAGS "-mcpu=cortex-m4 -mthumb -O2 -Wall")
 set(CMAKE_EXE_LINKER_FLAGS "-T STM32F4xx.ld -Wl,-Map=output.map")
 
 include_directories(
-    .
+    Inc
+    Drivers/
 )
 
 set(SOURCES
