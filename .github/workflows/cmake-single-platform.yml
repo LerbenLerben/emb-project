@@ -28,4 +28,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: Firmware
-        path: build/${{ env.PROJECT_NAME }}.bin
+        path: build/emb-project.bin
