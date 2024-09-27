@@ -21,7 +21,7 @@ set(SOURCES
 
 add_executable(emb-project.elf ${SOURCES})
 
-add_custom_command(TARGET ${PROJECT_NAME}.elf POST_BUILD
-    COMMAND ${CMAKE_OBJCOPY} -O binary ${PROJECT_NAME}.elf ${PROJECT_NAME}.bin
+add_custom_command(TARGET emb-project.elf POST_BUILD
+    COMMAND ${CMAKE_OBJCOPY} -O binary emb-project.elf emb-project.bin
     COMMENT "Генерация бинарного файла"
 )
